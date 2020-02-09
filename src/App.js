@@ -4,7 +4,7 @@ import {Home} from './pages/Home';
 import Error from './pages/Error';
 import Motivation from './pages/Motivation';
 import Projects from './pages/Projects';
-import {Resume} from './pages/Resume.js';
+import {Resume} from './pages/Resume';
 
 import { Route, Switch } from 'react-router-dom';
 

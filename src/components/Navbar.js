@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import {FaAlignRight} from 'react-icons/fa';
 import {Link} from 'react-router-dom';
-import Logo from '../images/logo.svg';
+import logo from '../images/logo.svg';
+import githublogo from '../images/githublogo.png';
+import linkedin from '../images/linkedin.png';
 
 export default class Navbar extends Component {
     state={
@@ -17,7 +19,7 @@ export default class Navbar extends Component {
             <div className='nav-center'>
                 <div className='nav-header'>
                   <Link to='/'>
-                  <img src={Logo} alt='My Portfolio'/>
+                  <img src={logo} alt='My Portfolio'/>
                   </Link>
                    <button 
                      type='button' 
@@ -39,6 +41,16 @@ export default class Navbar extends Component {
                     </li>
                     <li>
                       <Link to='./resume'>Resume</Link>
+                    </li>
+                    <li>
+                      <Link to='/' >
+                         <img src={githublogo} alt='My Portfolio'/>
+                      </Link>  
+                    </li> 
+                    <li>
+                      <Link to='/' >
+                         <img src={linkedin} alt='My Portfolio'/>
+                      </Link>  
                     </li>    
                 </ul>
              </div>

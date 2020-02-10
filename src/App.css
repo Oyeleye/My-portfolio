@@ -223,20 +223,22 @@ h6 {
 /* end of navbar */
 /* Front */
 .defaultFront,
-.roomsFront {
+.otherpagesFront {
   min-height: calc(100vh - 66px);
   background: url("./images/leye1.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: slide 10s infinite;
 }
-.roomsFront {
-  background-image: url("./images/leye2.jpeg");
+.defaultFront {
+  animation: slide1 10s infinite;
+}
+.otherpagesFront {
+  background-image: url("./images/leye7.jpeg");
   min-height: 60vh;
+  animation: slide2 10s infinite;
 }
-
-@keyframes slide {
+@keyframes slide1 {
   0%{
    background-image: url(./images/leye1.jpeg);
   }
@@ -245,6 +247,17 @@ h6 {
   }
   67%{
    background-image: url(./images/leye3.jpeg);
+  }
+}
+@keyframes slide2 {
+  0%{
+   background-image: url(./images/leye4.jpeg);
+  }
+  33%{
+   background-image: url(./images/leye5.jpeg);
+  }
+  67%{
+   background-image: url(./images/leye6.jpeg);
   }
 }
 /* End of Front */

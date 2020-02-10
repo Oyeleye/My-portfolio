@@ -2,8 +2,16 @@ import React from 'react';
 
 function Motivation() {
     return (
-        <div>
-            Motivation
+        <div className='animation-area'>
+            <ul className='box-area'>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
     );
 }

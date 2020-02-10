@@ -1,4 +1,4 @@
-My Portfolio
+My Portfolio (WILL UPDATE WHEN PROJECT IS FULLY READY!)
 
 Home, Projects, Motivation, CV, Error page.. (Navbar link to LinkedIn and GitHub)
 

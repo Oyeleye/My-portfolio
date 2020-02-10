@@ -1,9 +1,6 @@
 import React from 'react';
+import Front from '../components/Front';
 
 export const Resume = () => {
-    return (
-        <div>
-            Resume
-        </div>
-    );
+    return <Front front='otherpagesFront'/>;
 }

@@ -5,6 +5,7 @@ import logo from '../images/logo.svg';
 import githublogo from '../images/githublogo.png';
 import linkedin from '../images/linkedin.png';
 
+
 export default class Navbar extends Component {
     state={
         isOpen:false
@@ -45,15 +46,15 @@ export default class Navbar extends Component {
                     <li>
                       <Link to='/' >
                          <img src={githublogo} alt='My Portfolio'/>
-                      </Link>  
-                    </li> 
+                      </Link>   
+                    </li>
                     <li>
                       <Link to='/' >
                          <img src={linkedin} alt='My Portfolio'/>
-                      </Link>  
-                    </li>    
+                      </Link>   
+                    </li>
                 </ul>
-             </div>
+             </div>   
           </nav>
         );
     }

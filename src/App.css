@@ -112,8 +112,8 @@ h6 {
   color: var(--primaryColor);
 }
 .nav-links {
-  /* height: 0;
-  overflow: hidden; */
+   height: 0;
+  overflow: hidden; 
   
   transition: var(--mainTransition);
   list-style-type: none;
@@ -164,10 +164,23 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: slide 10s infinite;
 }
 .roomsFront {
   background-image: url("./images/leye2.jpeg");
   min-height: 60vh;
+}
+
+@keyframes slide {
+  0%{
+   background-image: url(./images/leye1.jpeg);
+  }
+  33%{
+   background-image: url(./images/leye2.jpeg);
+  }
+  67%{
+   background-image: url(./images/leye3.jpeg);
+  }
 }
 /* End of Front */
 /* Banner */

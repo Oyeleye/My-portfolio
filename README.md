@@ -8,7 +8,11 @@ I also imported browser router as router from react router dom, to Index js file
 COMPONENTS FOLDER 
 In this folder, placed within src, I have Front js, Navbar js Banner js.
 
-FRONT JS: 
+FRONT JS: I used this component for background image in diffrent pages. To make it very dynamic, I passed in 2 props (children and front), to Front function. I returned the Front function in a header tag, with the front prop as className inside the header tag, and then the children prop in-between the opening and closing header tags. I then set the Front function as defaultProps, where the front prop was named 'defaultFront' (I did it because I wanted the front prop to be more dynamic, as I also set it, not only to defaultFront, but also otherpagesFront, since I was going to add some other twists to the backgroundpictures or Front for different pages, using the CSS), and then imported it to different pages. I imported the Front component to home and erroe pages as <Front />, since I already set the default from Front components, and styled them in css, using defaultFront class (which I set as default inside Front component). In other pages where I wanted the backrground to be different, I add otherpagesFront class to Front component I imported to them (<Front front='otherpagesfront'/>). Remember I passed in front prop to Front function. I have a general styling for defaultFront and otherpagesFront and also a separate styling for otherpagesFront in css, to include other stylings I did not want to have in the defaultFront and also overwrite some, like the picture.
+
+BACKGROUND IMAGE ANIMATION for Front component: In App.css, I set animation as 10s infinite for defaultFront class as slide1, and also set the same for otherpagesFront class, as slide 2, and on @keyframes, set these pictures to slide at different percentages, , where I included these pictures.
+
+ANIMATION FOR MOTIVATION COMPONENT: Animation-area, box-area.
 
 NAVBAR JS: I imported Navbar component to App js and returned it outside switch component, since all pages are wrapped inside switch component, with App js. This is to make sure my Navbar and changes I made within its component appears on all pages (including error page), and all other comp within switch component don't have influence on my Navbar. I used an if statement:If open, show navs and nav links, else show navs, with an if statement in Navbar component and used a toggleHandler to toggle, when it only 'show-navs', if close ( !open). In there, when you toggle, it will show Home and Projects).
 

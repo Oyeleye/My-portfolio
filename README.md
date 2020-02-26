@@ -1,6 +1,7 @@
 My Portfolio (STILL UPDATING!)
 
-<img src="src/images/gif/portfolioPic.gif"> 
+<a href="https://imgflip.com/gif/3qd2ea"><img src="https://i.imgflip.com/3qd2ea.gif" title="portfolioVid"/></a>
+
 <img src="src/images/portfolioPic.jpg"> 
 
 

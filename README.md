@@ -1,6 +1,8 @@
 My Portfolio (STILL UPDATING!)
 
-<img src="src/images/portfolioPic.jpg">
+<img src="src/images/gif/portfolioPic.gif"> 
+<img src="src/images/portfolioPic.jpg"> 
+
 
 I installed 2 depencies: react icons and react router dom. I imported AlighRight from react icons, which I passed in a button and made it clickable (on click), when the app is used on a smaller screen or minimised, on a bigger screen. When my page is minised, the Alight Right icon appears and the nav links (pages) on my Navbar reduces to Home and Projects, while others are hidden. You can click the Align Right to toggle the 2 shown nav links.
 

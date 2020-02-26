@@ -68,12 +68,14 @@ h6 {
 .btn-primary:hover {
   background: transparent;
   color: var(--primaryColor);
-}
+} 
+
+
 .loading {
   text-transform: capitalize;
   text-align: center;
   margin-top: 3rem;
-}
+} 
 .error {
   text-align: center;
   text-transform: uppercase;
@@ -365,12 +367,12 @@ h6 {
   }
 }
 /*end of portfolio */
-/* featured rooms */
+/* featured projects */
 
-.featured-rooms {
+.featured-projects {
   padding: 5rem 0;
 }
-.featured-rooms-center {
+.featured-projects-center {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -379,24 +381,24 @@ h6 {
   grid-column-gap: 40px;
 }
 @media screen and (min-width: 776px) {
-  .featured-rooms-center {
+  .featured-projects-center {
     width: 90vw;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   }
 }
 @media screen and (min-width: 992px) {
-  .featured-rooms-center {
+  .featured-projects-center {
     width: 95vw;
     max-width: 1170px;
   }
 }
-/* end pf featured rooms */
-/* room */
-.room {
+/* end pf featured projects */
+/* project */
+.project {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
 }
-.room:hover {
+.project:hover {
   box-shadow: var(--darkShadow);
 }
 
@@ -426,7 +428,7 @@ h6 {
   font-weight: 300;
   letter-spacing: var(--mainSpacing);
 }
-.room-link {
+.project-link {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -442,10 +444,10 @@ h6 {
 .img-container:hover .price-top {
   opacity: 0;
 }
-.img-container:hover .room-link {
+.img-container:hover .project-link {
   transform: translate(-50%, -50%) scale(1);
 }
-.room-info {
+.project-info {
   background: var(--darkGrey);
   text-transform: capitalize;
   padding: 0.5rem 0;
@@ -453,13 +455,13 @@ h6 {
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
 }
-/* end of room  */
-/* single room*/
+/* end of project  */
+/* single project*/
 
-.single-room {
+.single-project {
   padding: 5rem 0 0 0;
 }
-.single-room-images {
+.single-project-images {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -467,11 +469,11 @@ h6 {
   grid-row-gap: 2rem;
   grid-column-gap: 50px;
 }
-.single-room-images img {
+.single-project-images img {
   width: 100%;
   display: block;
 }
-.single-room-info {
+.single-project-info {
   width: 80vw;
   display: grid;
   grid-template-columns: 1fr;
@@ -497,11 +499,11 @@ h6 {
 .info h6 {
   font-weight: 300;
 }
-.room-extras {
+.project-extras {
   width: 80vw;
   margin: 0 auto 3rem auto;
 }
-.room-extras h6 {
+.project-extras h6 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
@@ -513,13 +515,13 @@ h6 {
   grid-row-gap: 1rem;
 }
 @media screen and (min-width: 992px) {
-  .single-room-images,
-  .single-room-info,
-  .room-extras {
+  .single-project-images,
+  .single-project-info,
+  .project-extras {
     width: 95vw;
     max-width: 1170px;
   }
-  .single-room-info {
+  .single-project-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
@@ -528,12 +530,12 @@ h6 {
     padding-left: 3rem;
   }
 }
-/* end of single room*/
-/* roomlist */
-.roomslist {
+/* end of single project*/
+/* projectlist */
+.projectslist {
   padding: 5rem 0;
 }
-.roomslist-center {
+.projectslist-center {
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -543,18 +545,18 @@ h6 {
 }
 
 @media screen and (min-width: 776px) {
-  .roomslist-center {
+  .projectslist-center {
     width: 90vw;
   }
 }
 @media screen and (min-width: 992px) {
-  .roomslist-center {
+  .projectslist-center {
     width: 95vw;
     max-width: 1170px;
   }
 }
-/* end of roomlist */
-/*  rooms fitler*/
+/* end of projectlist */
+/*  projects fitler*/
 .filter-container {
   padding: 5rem 0;
 }
@@ -605,4 +607,4 @@ h6 {
     max-width: 1170px;
   }
 }
-/* end of rooms fitler*/
+/* end of projects fitler*/

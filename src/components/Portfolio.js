@@ -9,7 +9,7 @@ export default class Portfolio extends Component {
                icon: <FaLaptop/>,
                title: 'FRONTEND',
                info: 'HTML5',
-               info1: 'CSS3',
+               info1: 'CSS3 | SASS',
                info2: 'JavaScript',
                info3: 'React | Redux'
            },

@@ -1,10 +1,11 @@
-My Portfolio (STILL UPDATING!)
+<strong> My Portfolio (STILL UPDATING!) </strong>
 
+<video autoplay loop muted>
+   <source src='src/images/portfolioVid.mp4' type='portfolioVid/mp4'>
+</video>
 <a href='https://imgflip.com/gif/3qd68a'><img src='https://i.imgflip.com/3qd68a.gif' title='portfolioGif'/></a>
 
 <img src='src/images/portfolioPic.jpg' title='portfolioPic'> 
-
-<strong> Context API, Destructuring and Lifecycle: </strong> I used Context API, did some destructuring and lifecycle in Context, FeaturedProjects and Project Components. I created a Loading component (for a local loading in case of loading/internet problem), with a condition that it displays only if projects won't display.
 
 I installed 2 depencies: react icons and react router dom. I imported AlignRight from react icons, which I passed in a button and made it clickable (on click), when the app is used on a smaller screen or minimised, on a bigger screen. When my page is minised, the AlignRight icon appears and the nav links (pages) on my Navbar reduces to Home and Projects, while others are hidden. You can click the Align Right to toggle the 2 shown nav links.
 
@@ -33,8 +34,7 @@ In this folder placed within src, I have Home js, Project js, Error js, Motivati
 
 All css stylings were done within App.css. index.css was not used.
 
-
-
+<strong> Context API, Destructuring and Lifecycle Method: </strong> I used Context API, did some destructuring and lifecycle in Context, FeaturedProjects and Project Components. I created a Loading component (for a local loading in case of loading/internet problem), with a condition that it displays only if projects won't display.
 
 ''''''''''''''
 

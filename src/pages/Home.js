@@ -3,8 +3,8 @@ import Front from '../components/Front';
 import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
 import Portfolio from '../components/Portfolio';
-//import FeaturedProjects from '../components/FeaturedProjects';
-import MyFeaturedProject from '../components/Project';
+import FeaturedProjects from '../components/FeaturedProjects';
+//import MyFeaturedProject from '../components/Project';
 
 
 function Home () {
@@ -18,7 +18,8 @@ function Home () {
             </Banner>
          </Front>
          <Portfolio/>
-         <MyFeaturedProject />
+         <FeaturedProjects />
+      
       
    
     </>

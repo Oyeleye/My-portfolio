@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
+
 import Home from './pages/Home';
 import Error from './pages/Error';
 import Motivation from './pages/Motivation';
-import Projects from './pages/Projects';
+import { Projects } from './pages/Projects';
 import {Resume} from './pages/Resume';
 
 import { Route, Switch } from 'react-router-dom';

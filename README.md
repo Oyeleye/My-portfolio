@@ -1,11 +1,12 @@
 My Portfolio (STILL UPDATING!)
 
-<a href="https://imgflip.com/gif/3qd68a"><img src="https://i.imgflip.com/3qd68a.gif" title="portfolioGif"/></a>
+<a href='https://imgflip.com/gif/3qd68a'><img src='https://i.imgflip.com/3qd68a.gif' title='portfolioGif'/></a>
 
-<img src="src/images/portfolioPic.jpg" title="portfolioPic"> 
+<img src='src/images/portfolioPic.jpg' title='portfolioPic'> 
 
+<strong> Context API, Destructuring and Lifecycle: </strong> I used Context API, did some destructuring and lifecycle in Context, FeaturedProjects and Project Components. I created a Loading component (for a local loading in case of loading/internet problem), with a condition that it displays only if projects won't display.
 
-I installed 2 depencies: react icons and react router dom. I imported AlignRight from react icons, which I passed in a button and made it clickable (on click), when the app is used on a smaller screen or minimised, on a bigger screen. When my page is minised, the Alight Right icon appears and the nav links (pages) on my Navbar reduces to Home and Projects, while others are hidden. You can click the Align Right to toggle the 2 shown nav links.
+I installed 2 depencies: react icons and react router dom. I imported AlignRight from react icons, which I passed in a button and made it clickable (on click), when the app is used on a smaller screen or minimised, on a bigger screen. When my page is minised, the AlignRight icon appears and the nav links (pages) on my Navbar reduces to Home and Projects, while others are hidden. You can click the Align Right to toggle the 2 shown nav links.
 
 I also imported browser router as router from react router dom, to Index js file and wrapped the route around the rendered App js (main component) within the index js file. I could have as well imported it straight to App js and return the router to wrap other components I imported into App js, but I didn't want to overcrowd the App js, as there were other components, like the pages (home, projects, resume, error etc) I have imported to App js. I however imported route and switch components from react router dom, directly to App js. I created path (exact, no strict) with Link component from react router dom, in App.js and also used it in Navbar component to link the unordered list of links to my pages on Navbar
 

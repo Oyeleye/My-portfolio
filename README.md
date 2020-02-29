@@ -2,7 +2,7 @@
 
 <a href='https://imgflip.com/gif/3qd68a'><img src='https://i.imgflip.com/3qd68a.gif' title='portfolioGif'/></a>
 
-<img src='src/portfolioGif.gif'>
+<img src='src/portfolioGif.gif' >
 
 <img src='src/images/portfolioPic.jpg' title='portfolioPic'> 
 

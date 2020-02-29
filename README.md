@@ -1,8 +1,8 @@
 <strong> My Portfolio (STILL UPDATING!) </strong>
 
-<a href='https://imgflip.com/gif/3qd68a'><img src='https://i.imgflip.com/3qd68a.gif' title='portfolioGif'/></a>
+<a href='https://imgflip.com/gif/3qd68a'><img src='https://i.imgflip.com/3qd68a.gif' title='portfolioGif'/></a>  
 
-<img src='src/portfolioGif.gif' >
+![portfolioGif](https://user-images.githubusercontent.com/44131391/75606228-86450380-5ae2-11ea-8dc8-847f1e682456.gif)
 
 <img src='src/images/portfolioPic.jpg' title='portfolioPic'> 
 

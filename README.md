@@ -1,6 +1,5 @@
 <strong> My Portfolio (STILL UPDATING!) </strong>
-
-<a href='https://imgflip.com/gif/3qd68a'><img src='https://i.imgflip.com/3qd68a.gif' title='portfolioGif'/></a>  
+  
 
 ![portfolioGif](https://user-images.githubusercontent.com/44131391/75606228-86450380-5ae2-11ea-8dc8-847f1e682456.gif)
 
@@ -42,3 +41,4 @@ Home, Projects, Motivation, CV, Error page.. (Navbar link to LinkedIn and GitHub
 I used class-based component for project page, while I used funtional-based for other pages (home, motivation, resume, error page).
 
 Front component for the home background image.
+

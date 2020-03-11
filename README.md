@@ -1,4 +1,4 @@
-<link src='https://my-portfolio-caa21.web.app/'> Link to website! </link>
+<a href='https://my-portfolio-caa21.web.app/'> Link to website! </a>
 
 <strong> My Portfolio (STILL UPDATING!) </strong>
   

@@ -15,7 +15,7 @@ function Motivation() {
                 <li></li>
                 <li></li>
             </ul>
-            <div>
+            <div className='motivation-center'>
                <Banner title='Motivation Statement' subtitle='Read below'>
                    <Link to='/' className='btn-primary'>Return Home</Link>
                </Banner>

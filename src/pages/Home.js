@@ -11,7 +11,7 @@ function Home () {
     return (
      <> 
          <Front> 
-            <Banner  title='OYELEYE OYEDAYO' subtitle='Front-end Developer'>
+            <Banner  title='OYELEYE OYEDAYO' subtitle='Front-end Engineer'>
                <Link to='/projects' className='btn-primary'>
                   See Projects
                </Link>

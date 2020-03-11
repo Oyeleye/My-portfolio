@@ -36,9 +36,17 @@ class ProjectProvider extends Component {
          });
          return tempItems;
      }
+
+     getProject = (slug) => {
+         let tempProjects = [...this.state.projects];
+         const project = tempProjects.find(project => project.slug === slug)
+         return project;
+
+     }
+
      render() {
         return (
-                 <ProjectContext.Provider value={ { ...this.state } }> 
+                 <ProjectContext.Provider value={ { ...this.state, getProject: this.getProject } }> 
                     {this.props.children} 
                  </ProjectContext.Provider>
             );

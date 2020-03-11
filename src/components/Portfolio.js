@@ -16,18 +16,22 @@ export default class Portfolio extends Component {
            {
                icon: <FaServer/>,
                title: 'SERVER',
-               info: ''
+               info: 'NodeJS',
+               info1: 'Express'
            },
            {
                icon: <FaDatabase/>,
                title: 'DATABASE',
                info: 'PostgreSQL',
-               info1: 'MySQL'
+               info1: 'MySQL',
+               info2: 'MongoDB'
            },
            {
                icon: <FaCloud/>,
                title: 'DEPLOYMENT',
-               info: ''
+               info: 'Firebase',
+               info1: 'AWS',
+               info2: 'Netlify'
            },
        ]
    }

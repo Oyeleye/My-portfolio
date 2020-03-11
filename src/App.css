@@ -410,9 +410,9 @@ h6 {
   display: block;
   transition: var(--mainTransition);
 }
-.price-top {
+.price-bottom {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.8);
   color: var(--mainWhite);
@@ -422,7 +422,7 @@ h6 {
   text-align: center;
   transition: var(--mainTransition);
 }
-.price-top h6 {
+.price-bottom h6 {
   margin-bottom: 0;
   font-size: 0.9rem;
   font-weight: 300;
@@ -608,3 +608,10 @@ h6 {
   }
 }
 /* end of projects filter*/
+/* motivation*/
+.motivation-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* end of motivation*/

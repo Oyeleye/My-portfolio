@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export const Projects = () => {
         return (
            <Front front='otherpagesFront'>
-               <Banner title='My Projects'>
+               <Banner title='Project Portfolio'>
                   <Link to='/' className='btn-primary'>Return Home</Link>
                </Banner>
            </Front>

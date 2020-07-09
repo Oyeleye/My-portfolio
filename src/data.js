@@ -420,8 +420,8 @@ export default [
       id: "8"
     },
     fields: {
-      name: "music store",
-      slug: "music-store",
+      name: "double deluxe",
+      slug: "double-deluxe",
       type: "double",
       price: 400,
       size: 500,
@@ -648,8 +648,8 @@ export default [
       id: "12"
     },
     fields: {
-      name: "start up",
-      slug: "start-up",
+      name: "family deluxe",
+      slug: "family-deluxe",
       type: "family",
       price: 500,
       size: 700,
@@ -705,9 +705,9 @@ export default [
       id: "13"
     },
     fields: {
-      name: "guessing game",
-      slug: "guessing-game",
-      type: "guessing",
+      name: "presidential",
+      slug: "presidential-room",
+      type: "presidential",
       price: 600,
       size: 1000,
       capacity: 10,

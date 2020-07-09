@@ -240,6 +240,7 @@ h6 {
   min-height: 60vh;
   animation: slide2 10s infinite;
 }
+
 @keyframes slide1 {
   0%{
    background-image: url(./images/leye1.jpeg);
@@ -285,6 +286,22 @@ h6 {
 .banner p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+.banner h6 {
+  animation-duration: 20s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 576px) {
   .banner {
@@ -397,6 +414,7 @@ h6 {
 .project {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
+  background: var(--darkGrey);
 }
 .project:hover {
   box-shadow: var(--darkShadow);
@@ -410,9 +428,9 @@ h6 {
   display: block;
   transition: var(--mainTransition);
 }
-.price-bottom {
+.price-top {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.8);
   color: var(--mainWhite);
@@ -422,7 +440,7 @@ h6 {
   text-align: center;
   transition: var(--mainTransition);
 }
-.price-bottom h6 {
+.price-top h6 {
   margin-bottom: 0;
   font-size: 0.9rem;
   font-weight: 300;
@@ -556,7 +574,7 @@ h6 {
   }
 }
 /* end of projectlist */
-/*  projects filter*/
+/*  projects fitler*/
 .filter-container {
   padding: 5rem 0;
 }
@@ -607,11 +625,77 @@ h6 {
     max-width: 1170px;
   }
 }
-/* end of projects filter*/
-/* motivation*/
-.motivation-center{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* end of projects fitler*/
+/*project btn space*/
+.project-btn-space{
+  margin: 20px
 }
-/* end of motivation*/
+.project-btn1-center{
+  margin-left:100px;
+  margin-top:10px;
+}
+.project-btn2-center{
+  margin-left:80px;
+  margin-top:10px;
+  margin-bottom: 20px;
+}
+/*end of project btn space*/
+/* contact */
+.contact {
+  padding: 5rem 0;
+  background-color: rgba(73, 86, 206, 0.2);
+}
+.contact-logo {
+text-align: center;
+}
+.contact-message {
+  border: solid var(--primaryColor);
+}
+.contact-center {
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 40px;
+}
+@media screen and (min-width: 776px) {
+  .contact-center {
+    width: 90vw;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  }
+}
+@media screen and (min-width: 992px) {
+  .contact-center {
+    width: 95vw;
+    max-width: 1170px;
+  }
+}
+/* end of contact */
+/* copyright */
+.copyright {
+  display: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--mainWhite);
+  padding: 0.7rem 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+/* end of copyright */
+/*scroll up button*/
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  position: fixed;
+  bottom: 22px;
+  right: 20px;
+  display: none;
+  text-indent: -9999px;
+  background: var(--primaryColor) no-repeat 15px 16px;
+  z-index: 999;
+}
+/*end of scroll up button*/

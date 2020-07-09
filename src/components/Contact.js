@@ -32,18 +32,20 @@ export default function Contact() {
                     </div>
                 
                     <div className='contact-message'>
-                        <h2> Send message </h2>
-                        <TextField label='First Name*' />
-                        <Checkbox color='primary'/> Middle Name?
-                        <br />
-                        <TextField label='Last Name*' />
-                        <TextField label='Mobile No.*' />
-                        <br />
-                        <TextField label='Email*' />
-                        <TextField label='Message*' />
-                        <br />
-                        <br />
-                        <Button color='primary' variant='contained'>Submit</Button>
+                        <div className='contact-message-inner'>
+                            <h2> Send message </h2>
+                            <TextField label='First Name*' />
+                            <Checkbox color='primary'/> Middle Name?
+                            <br />
+                            <TextField label='Last Name*' />
+                            <TextField label='Mobile No.*' />
+                            <br />
+                            <TextField label='Email*' />
+                            <TextField label='Message*' />
+                            <br />
+                            <br />
+                            <Button color='primary' variant='contained'>Submit</Button>
+                        </div>
                     </div>
                 </div>
                 <div className='copyright'>

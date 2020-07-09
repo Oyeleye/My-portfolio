@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function Error() {
     return (
         <Front>
-           <Banner className='banner' title='404!'>
+           <Banner className='banner' title='ERROR!'>
               <Link to='/' className='btn-primary'>Return Home</Link>
            </Banner>
         </Front>

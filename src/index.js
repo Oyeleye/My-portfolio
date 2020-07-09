@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import { ProjectProvider } from './Context';
 
 ReactDOM.render(
- <ProjectProvider>  
+  <ProjectProvider>
      <Router>
        <App /> 
      </Router>

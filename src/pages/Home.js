@@ -6,6 +6,7 @@ import Portfolio from '../components/Portfolio';
 import MyFeaturedProject from '../components/FeaturedProjects';
 import Contact from '../components/Contact';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import ScrollToTop from '../components/ScrollToTop';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -24,6 +25,7 @@ function Home () {
                <h6>You are welcome</h6>
             </Banner>
             <ArrowUpwardIcon className='scrollup'/>
+            <ScrollToTop />
          </Front>
          <Portfolio/>
        <MyFeaturedProject />

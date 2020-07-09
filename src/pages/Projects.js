@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Front from '../components/Front';
 import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
-import MyFeaturedProject from '../components/FeaturedProjects';
+import AllProject from '../components/AllProjects';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -18,7 +18,7 @@ export const Projects = () => {
                   <Link to='/' data-aos='fade-up' className='btn-primary'>Return Home</Link>
                </Banner>
            </Front>
-           <MyFeaturedProject />
+           <AllProject />
       </>
         );
 }

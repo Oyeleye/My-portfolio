@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { TextField, Checkbox, Button} from '@material-ui/core';
 import Title from './Title';
 import logo from '../images/logo.svg';
@@ -10,8 +10,25 @@ import EmailIcon from '@material-ui/icons/Email';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
+
 export default function Contact() {
-    useEffect(()=>{
+    const [clickMiddleName, setClickMiddleName] = React.useState(false);
+    
+    const MiddleName = () => {
+        return( 
+         <span> Middle Name? </span>
+        );
+    };
+    const MiddleNameTextField = () => {
+        return(
+            <TextField label='Middle Name' />
+        );
+    }
+    const toggleMiddleName = () => {
+        setClickMiddleName(clickMiddleName=>!clickMiddleName);
+    };
+
+    React.useEffect(()=>{
         Aos.init({duration:2000});
       },[]);
 
@@ -35,7 +52,7 @@ export default function Contact() {
                         <div className='contact-message-inner'>
                             <h2> Send message </h2>
                             <TextField label='First Name*' />
-                            <Checkbox color='primary'/> Middle Name?
+                            <Checkbox onClick={toggleMiddleName} color='primary'/> {clickMiddleName? <MiddleNameTextField /> : <MiddleName /> }
                             <br />
                             <TextField label='Last Name*' />
                             <TextField label='Mobile No.*' />

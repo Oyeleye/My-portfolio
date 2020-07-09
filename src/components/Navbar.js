@@ -44,14 +44,14 @@ export default class Navbar extends Component {
                       <Link to='./resume'>Resume</Link>
                     </li>
                     <li>
-                      <Link to='/' >
+                      <a href='https://github.com/Oyeleye' >
                          <img src={githublogo} alt='My Portfolio'/>
-                      </Link>   
+                      </a>   
                     </li>
                     <li>
-                      <Link to='/' >
+                      <a href='https://www.linkedin.com/in/oyedayo-oyeleye-a985b9bb/' >
                          <img src={linkedin} alt='My Portfolio'/>
-                      </Link>   
+                      </a>   
                     </li>
                 </ul>
              </div>   

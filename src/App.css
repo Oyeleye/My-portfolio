@@ -652,10 +652,14 @@ h6 {
   background-color: rgba(73, 86, 206, 0.2);
 }
 .contact-logo {
-text-align: center;
+  text-align: center;
 }
 .contact-message {
   border: solid var(--primaryColor);
+}
+.contact-message-inner {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 .contact-center {
   width: 80vw;

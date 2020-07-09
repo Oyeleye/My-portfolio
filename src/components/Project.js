@@ -1,28 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import defaultImg from '../images/defaultBcg.jpeg';
-import PropTypes from 'prop-types';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 
 export default function Project( { project } ) {
-   const{name, slug, images, price} = project;
-
+    const { name, slug, images, price } = project;
+        useEffect(()=>{
+            Aos.init({duration:2000});
+        },[]);
+     
     return (
+        
         <article className='project'>
-            <p className='project-info'>{name}</p>
-            <div className='img-container'>     
-               <img src={images[0] || defaultImg} alt='single project' />
+            <div data-aos='fade-up' className='img-container'>
+               <img src={images[0] || defaultImg} alt='single room'/>
 
-            <Link to={`/projects/${slug}`} className='btn-primary project-link'> see project </Link> 
+                <Link to={`/rooms/${slug}`} className='btn-primary room-link project-btn1-center contact-logo'>
+                    See code
+                </Link>
+
+                <Link to={`/rooms/${slug}`} className='btn-primary room-link project-btn2-center'>
+                    View project
+                </Link>
             </div> 
         </article>
-    )
-} 
 
-Project.propTypes = {
-    project: PropTypes.exact( {
-          name: PropTypes.string.isRequired,
-          slug: PropTypes.string.isRequired,
-          images: PropTypes.arrayOf(PropTypes.string).isRequired,
-          price: PropTypes.number.isRequired
-    } )
+    )
 }

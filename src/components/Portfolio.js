@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component, useEffect } from 'react'
 import Title from './Title';
 import { FaLaptop, FaServer, FaDatabase, FaCloud } from 'react-icons/fa';
+
 
 export default class Portfolio extends Component {
    state= {
@@ -16,26 +17,23 @@ export default class Portfolio extends Component {
            {
                icon: <FaServer/>,
                title: 'SERVER',
-               info: 'NodeJS',
-               info1: 'Express'
+               info: ''
            },
            {
                icon: <FaDatabase/>,
                title: 'DATABASE',
                info: 'PostgreSQL',
-               info1: 'MySQL',
-               info2: 'MongoDB'
+               info1: 'MySQL'
            },
            {
                icon: <FaCloud/>,
                title: 'DEPLOYMENT',
-               info: 'Firebase',
-               info1: 'AWS',
-               info2: 'Netlify'
+               info: 'Firebase'
            },
        ]
    }
     render() {
+
         return (
             <section className='portfolio'>
                <Title title='portfolio' />

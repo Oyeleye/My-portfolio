@@ -90,6 +90,12 @@ h6 {
 }
 /* end of globals */
 /* Motivation */
+.motivation-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+}
 .animation-area {
   background: linear-gradient(to left, #8942a8, #ba382f);
   width: 100%;

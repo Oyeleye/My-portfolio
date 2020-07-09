@@ -696,16 +696,40 @@ h6 {
 }
 /* end of copyright */
 /*scroll up button*/
-.scrollup {
+.scroll-to-top {
   width: 40px;
   height: 40px;
   opacity: 1;
   position: fixed;
   bottom: 22px;
   right: 20px;
-  display: none;
   text-indent: -9999px;
   background: var(--primaryColor) no-repeat 15px 16px;
   z-index: 999;
+  border-radius: 100%;
+}
+.scroll-to-top:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+.scroll-icon {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+}
+.icon {
+  margin-top: 10px;
+  animation: scrollTop 0.5s alternate ease infinite;
+}
+@keyframes scrollTop {
+  from {
+    transform: translateY(2px);
+  }
+  to {
+    transform: translateY(-1px);
+  }
 }
 /*end of scroll up button*/

@@ -24,7 +24,6 @@ function Home () {
                </Link>
                <h6>You are welcome</h6>
             </Banner>
-            <ArrowUpwardIcon className='scrollup'/>
             <ScrollToTop />
          </Front>
          <Portfolio/>

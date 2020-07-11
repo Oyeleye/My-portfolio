@@ -15,11 +15,11 @@ I also imported browser router as router from react router dom, to Index js file
 
 
 COMPONENTS FOLDER 
-In this folder, placed within src, I have Front js, Navbar js Banner js.
+In this folder, placed within src, I have Hero js, Navbar js Banner js.
 
-FRONT JS: I used this component for background image in diffrent pages. To make it very dynamic, I passed in 2 props (children and front), to Front function. I returned the Front function in a header tag, with the front prop as className inside the header tag, and then the children prop in-between the opening and closing header tags. I then set the Front function as defaultProps, where the front prop was named 'defaultFront' (I did it because I wanted the front prop to be more dynamic, as I also set it, not only to defaultFront, but also otherpagesFront, since I was going to add some other twists to the backgroundpictures or Front for different pages, using the CSS), and then imported it to different pages. I imported the Front component to home and erroe pages as <Front />, since I already set the default from Front components, and styled them in css, using defaultFront class (which I set as default inside Front component). In other pages where I wanted the backrground to be different, I add otherpagesFront class to Front component I imported to them (<Front front='otherpagesfront'/>). Remember I passed in front prop to Front function. I have a general styling for defaultFront and otherpagesFront and also a separate styling for otherpagesFront in css, to include other stylings I did not want to have in the defaultFront and also overwrite some, like the picture.
+HERO JS: I used this component for background image in diffrent pages. To make it very dynamic, I passed in 2 props (children and hero), to Hero function. I returned the Hero function in a header tag, with the hero prop as className inside the header tag, and then the children prop in-between the opening and closing header tags. I then set the Hero function as defaultProps, where the hero prop was named 'defaultHero' (I did it because I wanted the hero prop to be more dynamic, as I also set it, not only to defaultHero, but also otherpagesHero, since I was going to add some other twists to the backgroundpictures or Hero for different pages, using the CSS), and then imported it to different pages. I imported the Hero component to home and erroe pages as <Hero />, since I already set the default from Hero components, and styled them in css, using defaultHero class (which I set as default inside Hero component). In other pages where I wanted the backrground to be different, I add otherpagesHero class to Hero component I imported to them (<Hero hero='otherpageshero'/>). Remember I passed in hero prop to Hero function. I have a general styling for defaultHero and otherpagesHero and also a separate styling for otherpagesHero in css, to include other stylings I did not want to have in the defaultHero and also overwrite some, like the picture.
 
-BACKGROUND IMAGE ANIMATION for Front component: In App.css, I set animation as 10s infinite for defaultFront class as slide1, and also set the same for otherpagesFront class, as slide 2, and on @keyframes, set these pictures to slide at different percentages, , where I included these pictures.
+BACKGROUND IMAGE ANIMATION for Hero component: In App.css, I set animation as 10s infinite for defaultHero class as slide1, and also set the same for otherpagesHero class, as slide 2, and on @keyframes, set these pictures to slide at different percentages, , where I included these pictures.
 
 ANIMATION FOR MOTIVATION COMPONENT: Animation-area, box-area.
 
@@ -44,5 +44,5 @@ Home, Projects, Motivation, CV, Error page.. (Navbar link to LinkedIn and GitHub
 
 I used class-based component for project page, while I used funtional-based for other pages (home, motivation, resume, error page).
 
-Front component for the home background image.
+Hero component for the home background image.
 

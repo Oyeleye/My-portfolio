@@ -229,24 +229,111 @@ h6 {
   }
 }
 /* end of navbar */
-/* Front */
-.defaultFront,
-.otherpagesFront {
+/* small navbar */
+.smallnavbar {
+  position: fixed;
+  top: 0.9rem;
+  right: 0;
+  width: 42.5%;
+  padding: 0.25rem 1.5rem;
+  margin:  0 1rem;
+  background: rgba(247, 247, 247, 1);
+  z-index: 1;
+}
+.smallnav-header {
+  display: flex;
+  justify-content: space-between;
+}
+.smallnav-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-left: 100%;
+}
+.smallnav-icon {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+}
+.smallnav-links {
+   height: 0;
+  overflow: hidden; 
+  
+  transition: var(--mainTransition);
+  list-style-type: none;
+}
+.smallnav-links a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 0;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: var(--mainSpacing);
+}
+.smallnav-links a:hover {
+  color: var(--primaryColor);
+}
+.smallnav-links2 a {
+  display: inline-flex;
+  margin: 0 0.5rem;
+}
+.smallshow-home-nav {
+  height: 350px;
+}
+.smallshow-nav {
+  height: 400px;
+}
+@media screen and (min-width: 768px) {
+  .smallnav-btn {
+    display: none;
+  }
+  .smallnavbar {
+    display: none;
+  }
+  .smallnav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .smallnav-links {
+    height: auto;
+    display: flex;
+    margin-left: 4rem;
+  }
+  .smallnav-links a {
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+  }
+}
+/* end of small navbar */
+/* Hero */
+.defaultHero,
+.otherpagesHero {
   min-height: calc(100vh - 66px);
   background: url("./images/leye1.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
-.defaultFront {
+.defaultHero {
   animation: slide1 10s infinite;
 }
-.otherpagesFront {
+.otherpagesHero {
   background-image: url("./images/leye7.jpeg");
   min-height: 60vh;
   animation: slide2 10s infinite;
 }
-
+@media screen and (max-width: 640px) {
+  .defaultHero {
+    min-height: 60vh;
+  }
+}
 @keyframes slide1 {
   0%{
    background-image: url(./images/leye1.jpeg);
@@ -269,7 +356,7 @@ h6 {
    background-image: url(./images/leye6.jpeg);
   }
 }
-/* End of Front */
+/* End of Hero */
 /* Banner */
 .banner {
   display: inline-block;
@@ -697,8 +784,8 @@ h6 {
 /* end of copyright */
 /*scroll up button*/
 .scroll-to-top {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.4rem;
   opacity: 1;
   position: fixed;
   bottom: 22px;

@@ -1,18 +1,10 @@
 import React, { Component } from 'react';
-import {FaAlignRight} from 'react-icons/fa';
 import {Link} from 'react-router-dom';
 import logo from '../images/logo.svg';
 import githublogo from '../images/githublogo.png';
 import linkedin from '../images/linkedin.png';
 
-
 export default class Navbar extends Component {
-    state={
-        isOpen:false
-    }
-    handleToggle = () => {
-        this.setState({isOpen: !this.state.isOpen});
-    };
       
     render() {
         return (
@@ -22,15 +14,8 @@ export default class Navbar extends Component {
                   <Link to='/'>
                   <img src={logo} alt='My Portfolio'/>
                   </Link>
-                   <button 
-                     type='button' 
-                     className='nav-btn'
-                     onClick={this.handleToggle}
-                     >
-                     <FaAlignRight className='nav-icon'/>
-                   </button>
                 </div>
-                <ul className={this.state.isOpen ? 'nav-links show-nav' : 'nav-links'}>
+                <ul className={'nav-links'}>
                     <li>
                       <Link to='./'>Home</Link>
                     </li>

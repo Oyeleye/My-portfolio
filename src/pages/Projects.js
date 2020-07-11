@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
-import Front from '../components/Front';
+import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
 import AllProject from '../components/AllProjects';
+import SmallNavbar from '../components/SmallNavbar';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -12,12 +13,13 @@ export const Projects = () => {
   },[]);
 
         return (
-      <>     
-           <Front front='otherpagesFront'>
+      <>   
+           <SmallNavbar />  
+           <Hero hero='otherpagesHero'>
                <Banner title='My Projects'>
                   <Link to='/' data-aos='fade-up' className='btn-primary'>Return Home</Link>
                </Banner>
-           </Front>
+           </Hero>
            <AllProject />
       </>
         );

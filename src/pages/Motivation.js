@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
+import SmallNavbar from '../components/SmallNavbar';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -12,6 +13,7 @@ function Motivation() {
 
     return (
         <>
+        <SmallNavbar/>
         <div className='animation-area'>
             <ul className='box-area'>
                 <li></li>

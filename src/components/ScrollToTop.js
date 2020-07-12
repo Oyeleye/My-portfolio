@@ -1,5 +1,5 @@
 import React from 'react'
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import { useWindowScroll } from 'react-use';
 
 const ScrollToTop = () => {
@@ -21,7 +21,7 @@ const ScrollToTop = () => {
 
     return (
         <div className='scroll-to-top' onClick={scrollToTop}>
-            <ArrowUpwardIcon className='scroll-icon icon'  />
+            <KeyboardArrowUpIcon className='icon'  />
         </div>
     )
 }

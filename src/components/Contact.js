@@ -7,6 +7,7 @@ import { Link }from 'react-router-dom';
 import AddIcCallIcon from '@material-ui/icons/AddIcCall';
 import EmailIcon from '@material-ui/icons/Email';
 import { makeStyles } from '@material-ui/core/styles';
+import TextareaAutoSize from '@material-ui/core/TextareaAutoSize';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -81,8 +82,12 @@ export default function Contact() {
                             <TextField label='Mobile No.' type='number' required/>
                             <br />
                             <TextField label='Email' required/>
-                            <TextField label='Message' required/>
                             <br />
+                            Message
+                            <br />
+                            <TextareaAutoSize rowsMax={4}
+                                aria-label='maximum height'
+                                placeholder='Enter message. Stretch message area for longer texts' required></TextareaAutoSize>
                             <br />
                             <Button type='submit' onClick={handleSubmitMessage} color='primary' variant='contained'>Submit</Button>
                         </form>

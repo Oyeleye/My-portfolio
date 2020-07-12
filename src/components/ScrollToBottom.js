@@ -13,7 +13,7 @@ export default function ScrollToBottom() {
 
     return (
         <div className='scroll-to-bottom' onClick={scrollToBottom}>
-            <KeyboardArrowDownIcon className='scroll-to-bottom-icon icon' />
+            <KeyboardArrowDownIcon className=' icon' />
         </div>
     )
 }

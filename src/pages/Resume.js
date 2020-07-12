@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import SmallNavbar from '../components/SmallNavbar';
-
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -35,11 +34,11 @@ export const Resume = () => {
                     <Link to='/' data-aos='fade-up' className='btn-primary'>Return Home</Link>
                 </Banner>
             </Hero>
-        <Button variant='contained' className={classes.root}>
-        <a className={classes.root} href='https://docs.google.com/document/d/1B9yvUT7O55_EVRIZqvGxOm2iv_FVWQpe0wBPJakVAKQ/export?format=pdf'>
-            Click to download resume/cv
-        </a>
-        </Button>
+            <div className='links'>
+                <Button variant='contained' className={classes.root} href='https://docs.google.com/document/d/1B9yvUT7O55_EVRIZqvGxOm2iv_FVWQpe0wBPJakVAKQ/export?format=pdf'>
+                    Click to download resume/cv
+                </Button>
+            </div>
         </>
    );
 }

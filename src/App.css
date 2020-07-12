@@ -234,7 +234,7 @@ h6 {
   position: fixed;
   top: 0.9rem;
   right: 0;
-  width: 42.5%;
+  width: 43%;
   padding: 0.25rem 1.5rem;
   margin:  0 1rem;
   background: rgba(247, 247, 247, 1);
@@ -331,7 +331,7 @@ h6 {
 }
 @media screen and (max-width: 640px) {
   .defaultHero {
-    min-height: 60vh;
+    min-height: 70vh;
   }
 }
 @keyframes slide1 {
@@ -367,6 +367,7 @@ h6 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
+
 .banner h1 {
   font-size: 2.5rem;
 }
@@ -782,7 +783,7 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 /* end of copyright */
-/*scroll up button*/
+/*scroll*/
 .scroll-to-top {
   width: 2.5rem;
   height: 2.4rem;
@@ -793,19 +794,39 @@ h6 {
   text-indent: -9999px;
   background: var(--primaryColor) no-repeat 15px 16px;
   z-index: 999;
-  border-radius: 100%;
+  border-radius: 10%;
 }
 .scroll-to-top:hover {
   background: transparent;
   color: var(--primaryColor);
 }
-.scroll-icon {
-  width: 40px;
-  height: 40px;
+.scroll-to-top .icon {
   opacity: 1;
   position: fixed;
   bottom: 28px;
   right: 28px;
+}
+.scroll-to-bottom {
+  width: 2.5rem;
+  height: 2.4rem;
+  opacity: 1;
+  position: fixed;
+  left: 50%;
+  bottom: 22px;
+  background: var(--primaryColor) no-repeat 15px 16px;
+  border-radius: 100%;
+}
+.scroll-to-bottom:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+.scroll-to-bottom .icon {
+  width: 40px;
+  opacity: 1;
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+
 }
 .icon {
   margin-top: 10px;
@@ -819,4 +840,26 @@ h6 {
     transform: translateY(-1px);
   }
 }
-/*end of scroll up button*/
+/*end of scroll*/
+/*links*/
+.links {
+ margin: 0 auto;
+ transition: var(--mainTransition);
+}
+
+.links a {
+ display: block;
+ text-decoration: none;
+ padding: 1rem 0;
+ color: var(--mainBlack);
+ transition: var(--mainTransition);
+ text-align: center;
+ font-size: 1rem;
+ font-weight: 800;
+ letter-spacing: var(--mainSpacing);
+}
+.links a:hover {
+ color: var(--primaryColor);
+}
+/*end of links*/
+

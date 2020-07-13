@@ -40,6 +40,9 @@ export default function SmallNavbar() {
                       <Link to='./resume'>Resume</Link>
                     </li>
                     <li>
+                      <Link to='./'>Contact</Link>
+                    </li>
+                    <li>
                       <a href='https://github.com/Oyeleye' >
                          <img src={githublogo} alt='My Portfolio'/>
                       </a>   

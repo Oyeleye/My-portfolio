@@ -11,13 +11,16 @@ import linkedin from '../images/linkedin.png';
 
 export default function SmallNavbar() {
 
-
     const[isOpen, setIsOpen]= React.useState(false);
 
     const toggleNavLinks = () =>{
         setIsOpen (isOpen =>!isOpen);
     } 
 
+    const scrollToBottom = () => window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior:'smooth'
+    });
 
     return (
         
@@ -40,7 +43,7 @@ export default function SmallNavbar() {
                       <Link to='./resume'>Resume</Link>
                     </li>
                     <li>
-                      <Link to='./'>Contact</Link>
+                      <Link to='./' onClick={scrollToBottom}>Contact</Link>
                     </li>
                     <li>
                       <a href='https://github.com/Oyeleye' >

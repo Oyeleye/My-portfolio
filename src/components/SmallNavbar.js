@@ -18,10 +18,13 @@ export default function SmallNavbar() {
         setIsOpen (isOpen =>!isOpen);
     }  
 
+    const scrollToBottom = () => window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior:'smooth'
+    });
 
     return (
         
-
         <nav className='smallnavbar'>
             <div className='smallnav-center'>
             <button type='button' 
@@ -42,6 +45,9 @@ export default function SmallNavbar() {
                     </li>
                     <li>
                       <Link to='./resume'>Resume</Link>
+                    </li>
+                    <li>
+                      <Link to='./' onClick={scrollToBottom}>Contact</Link>
                     </li>
                     <li>
                       <a href='https://github.com/Oyeleye' >

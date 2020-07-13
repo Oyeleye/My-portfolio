@@ -862,4 +862,20 @@ h6 {
  color: var(--primaryColor);
 }
 /*end of links*/
-
+/*contact links*/
+.contact-links {
+  margin: 0 auto;
+  transition: var(--mainTransition);
+ }
+ 
+ .contact-links a {
+  text-decoration: none;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+  font-size: 1.08rem;
+  font-weight: 300;
+ }
+ .contact-links a:hover {
+  color: var(--primaryColor);
+ }
+/*end of contact links*/

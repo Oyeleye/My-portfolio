@@ -4,9 +4,8 @@ import logo from '../images/logo.svg';
 import githublogo from '../images/githublogo.png';
 import linkedin from '../images/linkedin.png';
 
-export default class Navbar extends Component {
+export default function Navbar() {
       
-    render() {
         return (
           <nav className='navbar'>
             <div className='nav-center'>
@@ -29,6 +28,12 @@ export default class Navbar extends Component {
                       <Link to='./resume'>Resume</Link>
                     </li>
                     <li>
+                      <Link to='./'>Contact</Link>
+                    </li>
+                    <li>
+                      <Link to='./'>Language</Link>
+                    </li>
+                    <li>
                       <a href='https://github.com/Oyeleye' >
                          <img src={githublogo} alt='My Portfolio'/>
                       </a>   
@@ -42,5 +47,5 @@ export default class Navbar extends Component {
              </div>   
           </nav>
         );
-    }
 }
+

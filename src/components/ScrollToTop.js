@@ -15,9 +15,9 @@ const ScrollToTop = () => {
     }, [pageYOffset]);
     
     const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth'});
-    if (!visible) {
-        return false;
-    }
+        if (!visible) {
+            return false;
+        }
 
     return (
         <div className='scroll-to-top' onClick={scrollToTop}>

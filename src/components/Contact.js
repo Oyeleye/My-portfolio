@@ -62,13 +62,13 @@ export default function Contact() {
                 <div className='contact-center'>    
                     <div>
                         <h3> Let's Talk / Send Email </h3>
-                        <p>
+                        <p className='contact-links'>
                             <AddIcCallIcon/>
-                            +353 (83) 141 7085 
+                            <a href='tel:+353 (83) 141 7085'> +353 (83) 141 7085 </a> 
                         </p>
-                        <p> 
+                        <p className='contact-links'> 
                             <EmailIcon />
-                            oyeleyeoyedayo@gmail.com 
+                            <a href='mailto:oyeleyeoyedayo@gmail.com' > oyeleyeoyedayo@gmail.com </a>
                         </p>
                     </div>
                 

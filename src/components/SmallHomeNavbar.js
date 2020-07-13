@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Aos from 'aos';
 import {FaAlignRight} from 'react-icons/fa';
 import CloseIcon from '@material-ui/icons/Close';
 import { makeStyles } from '@material-ui/core/styles';
@@ -10,6 +11,9 @@ import linkedin from '../images/linkedin.png';
 
 
 export default function SmallNavbar() {
+    useEffect(()=>{
+      Aos.init({duration:2000});
+    },[]);
 
     const[isOpen, setIsOpen]= React.useState(false);
 
@@ -30,7 +34,7 @@ export default function SmallNavbar() {
                 className='smallnav-btn'
                 onClick={toggleNavLinks}
             >
-                {isOpen ? <CloseIcon className='smallnav-icon'/> : <FaAlignRight className='smallnav-icon'/> }
+                {isOpen ? <CloseIcon className='smallnav-icon' data-aos='flip-right'/> : <FaAlignRight className='smallnav-icon' data-aos='flip-up'/> }
             </button>
                 <ul className={isOpen ? 'smallnav-links smallshow-home-nav' : 'smallnav-links'}>
                     <li>

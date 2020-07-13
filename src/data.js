@@ -420,7 +420,9 @@ export default [
       id: "8"
     },
     fields: {
-      name: "double deluxe",
+      codeUrl: "https://github.com/Oyeleye/Beach-resort-project",
+      projectUrl: "",
+      name: "beach resort",
       slug: "double-deluxe",
       type: "double",
       price: 400,
@@ -648,7 +650,9 @@ export default [
       id: "12"
     },
     fields: {
-      name: "family deluxe",
+      codeUrl: "https://github.com/Oyeleye/Music-store-startup-page",
+      projectUrl:"",
+      name: "Music store web",
       slug: "family-deluxe",
       type: "family",
       price: 500,
@@ -705,7 +709,9 @@ export default [
       id: "13"
     },
     fields: {
-      name: "presidential",
+      codeUrl:"https://github.com/Oyeleye/guessingGameProject",
+      projectUrl:"",
+      name: "Guessing game",
       slug: "presidential-room",
       type: "presidential",
       price: 600,

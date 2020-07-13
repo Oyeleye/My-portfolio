@@ -29,11 +29,15 @@ function Motivation() {
                    <Link to='/' data-aos='fade-up' className='btn-primary'>Return Home</Link>
                </Banner>
             </div>
-            <div>
-               <h2> 
-                Title
-               </h2>
-               <p>Write statement or IMPORT IT AS A COMPONENT</p>
+            <div className='motivation-text' >
+                <p>
+                    I am very passionate about learning, developing and designing solidly tested solutions. 
+                    I have contributed to open source projects, worked on engineering teams, and always stay 
+                    attuned to the newest framework. 
+                    I was an Intern University Teacher of Computer Learning at the University of Turku, Finland, 
+                    (2018 - 2019). During that time, I taught graduate students HTML5, CSS3 and JavaScript, and how it can be incorporated into 
+                    the teaching-learning process. 
+                </p>
             </div>
         </div>
         </>

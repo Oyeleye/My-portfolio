@@ -63,7 +63,7 @@ export default function Contact() {
                     <div>
                         <h3> Let's Talk / Send Email </h3>
                         <p className='contact-links'>
-                            <AddIcCallIcon/>
+                            <AddIcCallIcon />
                             <a href='tel:+353 (83) 141 7085'> +353 (83) 141 7085 </a> 
                         </p>
                         <p className='contact-links'> 
@@ -87,7 +87,7 @@ export default function Contact() {
                             <br />
                             <TextareaAutoSize rowsMax={4}
                                 aria-label='maximum height'
-                                placeholder='Enter message. Stretch message area for longer texts' required></TextareaAutoSize>
+                                placeholder='Enter message' required></TextareaAutoSize>
                             <br />
                             <Button type='submit' onClick={handleSubmitMessage} color='primary' variant='contained'>Submit</Button>
                         </form>

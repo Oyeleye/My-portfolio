@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logo from '../images/logo.svg';
 import githublogo from '../images/githublogo.png';
 import linkedin from '../images/linkedin.png';
 
 export default function Navbar() {
-      
+
+        const scrollToBottom = () => window.scrollTo({
+          top: document.documentElement.scrollHeight,
+          behavior:'smooth'
+        });
+
         return (
           <nav className='navbar'>
             <div className='nav-center'>
@@ -16,22 +21,19 @@ export default function Navbar() {
                 </div>
                 <ul className={'nav-links'}>
                     <li>
-                      <Link to='./'>Home</Link>
+                      <Link to='./' title='Home page'>Home</Link>
                     </li>
                     <li>
-                      <Link to='./projects'>Projects</Link>
+                      <Link to='./projects' title='Projects' >Projects</Link>
                     </li>
                     <li>
-                      <Link to='./motivation'>Motivation</Link>
+                      <Link to='./motivation' title='See motivation page' >Motivation</Link>
                     </li>
                     <li>
-                      <Link to='./resume'>Resume</Link>
+                      <Link to='./resume' title='Download resume'>Resume</Link>
                     </li>
                     <li>
-                      <Link to='./'>Contact</Link>
-                    </li>
-                    <li>
-                      <Link to='./'>Language</Link>
+                      <Link to='./' title='Change language'>Language</Link>
                     </li>
                     <li>
                       <a href='https://github.com/Oyeleye' >

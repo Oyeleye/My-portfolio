@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import Aos from 'aos';
 import {FaAlignRight} from 'react-icons/fa';
 import CloseIcon from '@material-ui/icons/Close';
-import { makeStyles } from '@material-ui/core/styles';
 import {Link} from 'react-router-dom';
 import logo from '../images/logo.svg';
 import githublogo from '../images/githublogo.png';
@@ -30,13 +29,7 @@ export default function SmallNavbar() {
         
         <nav className='smallnavbar'>
             <div className='smallnav-center'>
-            <button type='button' 
-                className='smallnav-btn'
-                onClick={toggleNavLinks}
-            >
-                {isOpen ? <CloseIcon className='smallnav-icon' data-aos='flip-right'/> : <FaAlignRight className='smallnav-icon' data-aos='flip-up'/> }
-            </button>
-                <ul className={isOpen ? 'smallnav-links smallshow-home-nav' : 'smallnav-links'}>
+                <ul className='smallnav-links smallshow-home-nav'>
                     <li>
                       <Link to='./projects'>Projects</Link>
                     </li>

@@ -1,8 +1,12 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.svg';
 import githublogo from '../images/githublogo.png';
 import linkedin from '../images/linkedin.png';
+import Aos from 'aos';
+import {FaAlignRight} from 'react-icons/fa';
+import CloseIcon from '@material-ui/icons/Close';
+import SmallHomeNavbar from '../components/SmallHomeNavbar';
 
 export default function Navbar() {
 
@@ -11,14 +15,29 @@ export default function Navbar() {
           behavior:'smooth'
         });
 
+        const[isOpen, setIsOpen]= React.useState(false);
+
+        const toggleNavLinks = () =>{
+            setIsOpen (isOpen =>!isOpen);
+        } 
+
         return (
           <nav className='navbar'>
             <div className='nav-center'>
                 <div className='nav-header'>
                   <Link to='/'>
-                  <img src={logo} alt='My Portfolio'/>
+                    <img src={logo} alt='My Portfolio'/>
                   </Link>
+                  <button 
+                    type='button' 
+                    className='nav-btn'
+                    onClick={toggleNavLinks}
+                  >
+                      {isOpen ? <CloseIcon className='nav-icon' data-aos='flip-right'/> : <FaAlignRight className='nav-icon' data-aos='flip-up'/> }
+                  </button>
                 </div>
+
+                {isOpen? <SmallHomeNavbar /> : '' }
                 <ul className={'nav-links'}>
                     <li>
                       <Link to='./' title='Home page'>Home</Link>

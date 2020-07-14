@@ -274,7 +274,7 @@ h6 {
   .black-nav-links {
     height: auto;
     display: flex;
-    margin-left: 4rem;
+    margin-left: -0.6rem;
   }
   .black-nav-links a {
     margin: 0 1rem;
@@ -433,22 +433,6 @@ h6 {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-.banner h6 {
-  animation-duration: 20s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%; 
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
 @media screen and (min-width: 576px) {
   .banner {
     padding: 2rem 3rem;
@@ -594,9 +578,16 @@ h6 {
 }
 .project-link {
   position: absolute;
-  top: 50%;
+  top: 116%;
   left: 50%;
-  transform: scale(0);
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3s linear;
+}
+.project-link2 {
+  position: absolute;
+  top: 145%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
   transition: all 0.3s linear;
 }
 .img-container:hover {
@@ -608,13 +599,10 @@ h6 {
 .img-container:hover .price-top {
   opacity: 0;
 }
-.img-container:hover .project-link {
-  transform: translate(-50%, -50%) scale(1);
-}
 .project-info {
   background: var(--darkGrey);
   text-transform: capitalize;
-  padding: 0.5rem 0;
+  margin: 7rem 0 0.5rem 0;
   text-align: center;
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
@@ -773,18 +761,26 @@ h6 {
 }
 /* end of projects fitler*/
 /*project btn space*/
-.project-btn-space{
-  margin: 20px
-}
-.project-btn1-center{
-  margin-left:100px;
-  margin-top:10px;
-  align-items: right;
-}
 .project-btn2-center{
   margin-left:80px;
   margin-top:10px;
   margin-bottom: 20px;
+}
+.project-btn1 {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  background: var(--primaryColor);
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.project-btn1:hover {
+  background: transparent;
+  color: var(--primaryColor);
 }
 /*end of project btn space*/
 /* contact */

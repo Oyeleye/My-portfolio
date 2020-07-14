@@ -40,6 +40,7 @@ function Motivation() {
                 </p>
             </div>
         </div>
+
         </>
         
     );

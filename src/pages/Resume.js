@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import SmallNavbar from '../components/SmallNavbar';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import {  } from "module";
 
 const useStyles = makeStyles(theme=> ({
     root: {

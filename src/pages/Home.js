@@ -20,25 +20,24 @@ function Home () {
 
 
    return (
-     <> 
-         <SmallHomeNavbar/>
+      <> 
+
          <BlackNavbar />
          <Hero > 
             <Banner   title='OYELEYE OYEDAYO' subtitle='Full-Stack Developer'>
                <Link to='/projects' data-aos='fade-up' className='btn-primary'>
                   See Projects
                </Link>
-               <h6>You are welcome</h6>
             </Banner>
-            <ScrollToBottom />
+         <ScrollToBottom />
          </Hero>
          <ScrollToTop />
          <Portfolio/>
          <MyFeaturedProject />
          <Contact />
    
-    </>
-    );;
+      </>
+   );;
    
 }
 

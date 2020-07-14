@@ -10,6 +10,7 @@ import ScrollToBottom from '../components/ScrollToBottom';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import SmallHomeNavbar from '../components/SmallHomeNavbar';
+import BlackNavbar from '../components/BlackNavbar';
 
 function Home () {
    useEffect(()=>{
@@ -21,6 +22,7 @@ function Home () {
    return (
      <> 
          <SmallHomeNavbar/>
+         <BlackNavbar />
          <Hero > 
             <Banner   title='OYELEYE OYEDAYO' subtitle='Full-Stack Developer'>
                <Link to='/projects' data-aos='fade-up' className='btn-primary'>

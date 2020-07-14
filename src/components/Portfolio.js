@@ -1,57 +1,41 @@
-import React, { Component, useEffect } from 'react'
+import React from 'react'
 import Title from './Title';
 import { FaLaptop, FaServer, FaDatabase, FaCloud } from 'react-icons/fa';
 
 
-export default class Portfolio extends Component {
-   state= {
-       portfolio: [
-           {
-               icon: <FaLaptop/>,
-               title: 'FRONTEND',
-               info: 'HTML5',
-               info1: 'CSS3 | SASS',
-               info2: 'JavaScript',
-               info3: 'React | Redux'
-           },
-           {
-               icon: <FaServer/>,
-               title: 'SERVER',
-               info: ''
-           },
-           {
-               icon: <FaDatabase/>,
-               title: 'DATABASE',
-               info: 'PostgreSQL',
-               info1: 'MySQL'
-           },
-           {
-               icon: <FaCloud/>,
-               title: 'DEPLOYMENT',
-               info: 'Firebase'
-           },
-       ]
-   }
-    render() {
+export default function Portfolio () {
 
         return (
             <section className='portfolio'>
                <Title title='portfolio' />
                  <div className='portfolio-center'>
-                     {this.state.portfolio.map((item, index)=> {
-                         return (
-                             <article key={index} className='portfolio'>
-                                 <span>{item.icon}</span>
-                                 <h6>{item.title}</h6>
-                                 <p>{item.info}</p>
-                                 <p>{item.info1}</p>
-                                 <p>{item.info2}</p>
-                                 <p>{item.info3}</p>
+                             <article className='portfolio'>
+                                 <span><FaLaptop/></span>
+                                 <h6>FRONTEND</h6>
+                                 <p>HTML5</p>
+                                 <p>CSS3 | SASS</p>
+                                 <p>JavaScript</p>
+                                 <p>React | Redux</p>
+                             </article>
+                             <article className='portfolio'>
+                                 <span><FaServer/></span>
+                                 <h6>SERVER</h6>
+                                 <p></p>
+                                 <p></p>
+                             </article>
+                             <article className='portfolio'>
+                                 <span><FaDatabase/></span>
+                                 <h6>DATABASE</h6>
+                                 <p>PostgreSQL</p>
+                                 <p>MySQL</p>
+                             </article>
+                             <article className='portfolio'>
+                                 <span><FaCloud/></span>
+                                 <h6>DEPLOYMENT</h6>
+                                 <p>Firebase</p>
+                                 <p>Netlify</p>
                              </article> 
-                         );
-                     })}
                  </div>
             </section>
-        );
-    }
+        )
 }

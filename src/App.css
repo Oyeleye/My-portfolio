@@ -190,6 +190,12 @@ h6 {
   transition: var(--mainTransition);
   list-style-type: none;
 }
+.nav-transition {
+
+ 
+ transition: var(--mainTransition);
+ list-style-type: none;
+}
 .nav-links a {
   display: block;
   text-decoration: none;
@@ -285,7 +291,17 @@ h6 {
 /* small navbar */
 .smallnavbar {
   position: fixed;
-  top: 0.9rem;
+  top: 4.2rem;
+  right: 0;
+  width: 40.7%;
+  padding: 0.25rem 1.5rem;
+  margin:  0 1rem;
+  background: rgba(247, 247, 247, 1);
+  z-index: 1;
+}
+.small-home-navbar {
+  position: fixed;
+  top: 4.2rem;
   right: 0;
   width: 40.7%;
   padding: 0.25rem 1.5rem;
@@ -346,19 +362,17 @@ h6 {
   .smallnavbar {
     display: none;
   }
+  .small-home-navbar {
+    display: none;
+  }
   .smallnav-center {
-    max-width: 1170px;
-    margin: 0 auto;
-    display: flex;
+    display: none;
   }
   .smallnav-links {
-    height: auto;
-    display: flex;
-    margin-left: 4rem;
+    display: none;
   }
   .smallnav-links a {
-    margin: 0 1rem;
-    padding: 0.5rem 0;
+    display: none;
   }
 }
 /* end of small navbar */
@@ -578,13 +592,17 @@ h6 {
 }
 .project-link {
   position: absolute;
+  display: grid;
   top: 116%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: all 0.3s linear;
+  overflow: hidden;
 }
 .project-link2 {
   position: absolute;
+  overflow: hidden;
+  display: grid;
   top: 145%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);

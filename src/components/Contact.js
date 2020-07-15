@@ -8,8 +8,6 @@ import AddIcCallIcon from '@material-ui/icons/AddIcCall';
 import EmailIcon from '@material-ui/icons/Email';
 import { makeStyles } from '@material-ui/core/styles';
 import TextareaAutoSize from '@material-ui/core/TextareaAutoSize';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 
 
 
@@ -52,12 +50,9 @@ export default function Contact() {
         setSubmitMessage(true);
 
     }
-    React.useEffect(()=>{
-        Aos.init({duration:2000});
-      },[]);
 
     return (
-        <section data-aos='flip-down' className='contact'>
+        <section className='contact'>
             <Title title='Contact' />
                 <div className='contact-center'>    
                     <div>

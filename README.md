@@ -1,10 +1,8 @@
+<strong> Click link: </strong>
 <h2> 
 <a href='https://oyeleyeoyedayo.com'> oyeleyeoyedayo.com </a>
 </h2>
-<div> or click </div>>
-<h2> 
-<a href='https://oyeleyeoyedayo.com'> Link to website! </a>
-</h2>
+
 
 <strong> My Portfolio (STILL UPDATING!) </strong>
   

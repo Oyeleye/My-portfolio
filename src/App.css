@@ -241,6 +241,11 @@ h6 {
   padding: 0.25rem 1.5rem;
   z-index: 1; 
 }
+.language {
+  padding: 0.25rem 10rem;
+  position: absolute;
+  z-index: 1; 
+}
 .black-nav-header {
   display: flex;
   justify-content: space-between;
@@ -257,6 +262,21 @@ h6 {
  transition: var(--mainTransition);
  list-style-type: none;
 }
+.language-nav-links a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 70;
+  color: var(--mainWhite);
+  transition: var(--mainTransition);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+ }
+ .language-nav-links a:hover {
+  color: '';
+ }
 .black-nav-links a {
  display: block;
  text-decoration: none;
@@ -282,12 +302,101 @@ h6 {
     display: flex;
     margin-left: -0.6rem;
   }
+  .language-nav-links {
+    height: auto;
+    display: flex;
+    margin-left: -0.6rem;
+  }
+  .language-nav-links a {
+    margin: 0 0rem;
+    padding: 0.5rem 0;
+  }
   .black-nav-links a {
     margin: 0 1rem;
     padding: 0.5rem 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .language-nav {
+    display: none;
+  }
+}
 /* end of black navbar */
+/* language navbar */
+.languagenavbar {
+  position: fixed;
+  top: 4rem;
+  left: 30rem;
+  width: 8.7%;
+  padding: 0.25rem 1.5rem;
+  margin:  0 1rem;
+  background: rgba(247, 247, 247, 1);
+  z-index: 1;
+}
+.languagenav-header {
+  display: flex;
+  justify-content: space-between;
+}
+.languagenav-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-left: 100%;
+}
+.languagenav-icon {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+}
+.languagenav-links {
+   height: 0;
+  overflow: hidden; 
+  
+  transition: var(--mainTransition);
+  list-style-type: none;
+}
+.languagenav-links a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 0;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 520;
+}
+.languagenav-links a:hover {
+  color: var(--primaryColor);
+}
+.languagenav-links2 a {
+  display: inline-flex;
+  margin: 0 0.3rem;
+}
+.languageshow-nav {
+  height: 170px;
+}
+@media screen and (max-width: 768px) {
+  .languageshow-nav {
+    height: 100px;
+  }
+  .languagenav-btn {
+    display: none;
+  }
+  .languagenavbar {
+    display: none;
+  }
+  .languagenav-center {
+    display: none;
+  }
+  .languagenav-links {
+    display: none;
+  }
+  .languagenav-links a {
+    display: none;
+  }
+}
+/* end of language navbar */
 /* small navbar */
 .smallnavbar {
   position: fixed;
@@ -946,7 +1055,7 @@ h6 {
 .motivation-text {
   text-align: center;
   justify-content: center;
-  margin: 1% 4rem;
+  margin: 0 4rem;
   display: flex;
   color: var(--offWhite);
   font-size: 19px;

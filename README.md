@@ -48,3 +48,7 @@ I used class-based component for project page, while I used funtional-based for 
 
 Hero component for the home background image.
 
+<strong> Installed more dependencies </strong>
+react-onclickoutside
+material-ui
+

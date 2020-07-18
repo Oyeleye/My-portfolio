@@ -7,19 +7,22 @@ import Aos from 'aos';
 import {FaAlignRight} from 'react-icons/fa';
 import CloseIcon from '@material-ui/icons/Close';
 import SmallHomeNavbar from '../components/SmallHomeNavbar';
+import MenuItemDropdown from '../components/MenuItemDropdown';
+import LanguageMenuDropdown from '../components/LanguageMenuDropdown';
 
 export default function Navbar() {
 
-        const scrollToBottom = () => window.scrollTo({
-          top: document.documentElement.scrollHeight,
-          behavior:'smooth'
-        });
+    const[isOpen, setIsOpen]= React.useState(false);  
 
-        const[isOpen, setIsOpen]= React.useState(false);
+    const toggleNavLinks = () =>{
+       setIsOpen (isOpen =>!isOpen);
+    }
+    
+    const[openLanguage, setOpenLanguage]= React.useState(false);  
 
-        const toggleNavLinks = () =>{
-            setIsOpen (isOpen =>!isOpen);
-        } 
+    const toggleLanguage = () =>{
+       setOpenLanguage (openLanguage =>!openLanguage);
+    }
 
         return (
           <nav className='navbar'>
@@ -38,7 +41,7 @@ export default function Navbar() {
                 </div>
 
                 {isOpen? <SmallHomeNavbar /> : '' }
-                <ul className={'nav-links'}>
+                <ul className='nav-links'>
                     <li>
                       <Link to='./' title='Home page'>Home</Link>
                     </li>
@@ -52,9 +55,6 @@ export default function Navbar() {
                       <Link to='./resume' title='Download resume'>Resume</Link>
                     </li>
                     <li>
-                      <Link to='./' title='Change language'>Language</Link>
-                    </li>
-                    <li>
                       <a href='https://github.com/Oyeleye' >
                          <img src={githublogo} alt='My Portfolio'/>
                       </a>   
@@ -65,6 +65,7 @@ export default function Navbar() {
                       </a>   
                     </li>
                 </ul>
+                  {openLanguage? <LanguageMenuDropdown /> : '' }
              </div>   
           </nav>
         );

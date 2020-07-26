@@ -11,12 +11,14 @@ import {  } from "module";
 
 const useStyles = makeStyles(theme=> ({
     root: {
+        textAlign: 'center',
         marginTop:10,
         display: 'flex',
         margin: '0 auto',
         borderStyle: 'solid',
         borderWidth: 1,
-        width: "26rem",
+        width: 400,
+        padding: 15
     }
 }));
 

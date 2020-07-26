@@ -5,7 +5,7 @@ import project4 from "./images/details-4.jpeg";
 import img1 from "./images/room-1.jpeg";
 import img2 from "./images/room-2.jpeg";
 import img3 from "./images/room-3.jpeg";
-import img4 from "./images/room-4.jpeg";
+import webcalculator from "./images/webcalculator.jpeg";
 import img5 from "./images/room-5.jpeg";
 import img6 from "./images/room-6.jpeg";
 import img7 from "./images/room-7.jpeg";
@@ -161,63 +161,6 @@ export default [
           fields: {
             file: {
               url: img3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: project2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: project3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: project4
-            }
-          }
-        }
-      ]
-    }
-  },
-  {
-    sys: {
-      id: "4"
-    },
-    fields: {
-      name: "single deluxe",
-      slug: "single-deluxe",
-      type: "single",
-      price: 300,
-      size: 400,
-      capacity: 1,
-      pets: true,
-      breakfast: true,
-      featured: false,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img4
             }
           }
         },
@@ -883,7 +826,7 @@ export default [
     fields: {
       codeUrl: "https://github.com/Oyeleye/Music-store-startup-page",
       projectUrl:"https://music-web-79cfc.web.app/",
-      name: "Music store web",
+      name: "Music web store",
       slug: "family-deluxe",
       type: "family",
       price: 500,
@@ -908,6 +851,65 @@ export default [
           fields: {
             file: {
               url: img12
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: project2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: project3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: project4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "4"
+    },
+    fields: {
+      codeUrl: "https://github.com/Oyeleye/Web-calculator",
+      projectUrl:"",
+      name: "Web calculator",
+      slug: "single-deluxe",
+      type: "single",
+      price: 300,
+      size: 400,
+      capacity: 1,
+      pets: true,
+      breakfast: true,
+      featured: true,
+      description:
+        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      extras: [
+        "Plush pillows and breathable bed linens",
+        "Soft, oversized bath towels",
+        "Full-sized, pH-balanced toiletries",
+        "Complimentary refreshments",
+        "Adequate safety/security",
+        "Internet",
+        "Comfortable beds"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: webcalculator
             }
           }
         },

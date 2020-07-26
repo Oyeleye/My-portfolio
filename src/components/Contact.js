@@ -3,7 +3,6 @@ import { TextField, Checkbox, Button} from '@material-ui/core';
 import Title from './Title';
 import githublogo from '../images/githublogo.png';
 import linkedin from '../images/linkedin.png';
-import { Link }from 'react-router-dom';
 import AddIcCallIcon from '@material-ui/icons/AddIcCall';
 import EmailIcon from '@material-ui/icons/Email';
 import { makeStyles } from '@material-ui/core/styles';
@@ -16,8 +15,9 @@ export default function Contact() {
     const useStyles = makeStyles(theme => ({
         sentMsgStyle: {
             color: 'blue'
-        }
-    })); 
+        }       
+    }));
+ 
     const classes = useStyles();
 
     const [clickMiddleName, setClickMiddleName] = React.useState(false);
@@ -65,6 +65,11 @@ export default function Contact() {
                             <EmailIcon />
                             <a href='mailto:oyeleyeoyedayo@gmail.com' > oyeleyeoyedayo@gmail.com </a>
                         </p>
+                        <div className='links'>
+                            <Button variant='contained' href='https://docs.google.com/document/d/1B9yvUT7O55_EVRIZqvGxOm2iv_FVWQpe0wBPJakVAKQ/export?format=pdf'>
+                                Click to download resume/cv
+                            </Button>
+                        </div>
                     </div>
                 
                     <div className='contact-message'>

@@ -10,9 +10,9 @@ export default function Portfolio () {
      },[]);
      
     return (
-        <section className='portfolio'>
+        <section className='portfolios'>
             <Title title='portfolio' />
-                <div className='portfolio-center' >
+                <div className='portfolios-center' >
                         <article className='portfolio'>
                             <span><FaLaptop/></span>
                             <h6>FRONTEND</h6>

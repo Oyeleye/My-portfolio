@@ -1,8 +1,9 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 
-export default function LanguageMenuDropdown() {
-  const[isOpen, setIsOpen]= React.useState(false);  
+function LanguageMenuDropdown() {
+
 
   const useStyles = makeStyles(theme => ({
     navLanguage: {
@@ -11,9 +12,6 @@ export default function LanguageMenuDropdown() {
     }
   })); 
   const classes = useStyles();
-    const toggleNavLinks = () =>{
-        setIsOpen (isOpen =>!isOpen);
-    } 
   
       return (
           <>
@@ -21,13 +19,13 @@ export default function LanguageMenuDropdown() {
               <div className='languagenav-center'>
                   <ul className='languagenav-links languageshow-nav'>
                       <li>
-                        <a to='./projects' className={classes.navLanguage}>En</a>
+                        <Link to='./projects' className={classes.navLanguage}>En</Link>
                       </li>
                       <li>
-                        <a to='./motivation' className={classes.navLanguage}>De</a>
+                        <Link to='./motivation' className={classes.navLanguage}>De</Link>
                       </li>
                       <li>
-                        <a to='./resume' className={classes.navLanguage}>Fi</a>
+                        <Link to='./resume' className={classes.navLanguage}>Fi</Link>
                       </li>
                   </ul>
                </div>   
@@ -36,4 +34,6 @@ export default function LanguageMenuDropdown() {
           
       )
   }
-  
+
+
+export default LanguageMenuDropdown

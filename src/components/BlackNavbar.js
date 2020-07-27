@@ -6,7 +6,7 @@ import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import LanguageMenuDropdown from '../components/LanguageMenuDropdown';
 import Clock from './Clock.js';
 import AccessTimeIcon from '@material-ui/icons/AccessTime';
-
+import { Link } from 'react-router-dom';
 
 export default function BlackNavbar() {
     const useStyles = makeStyles(theme => ({
@@ -61,15 +61,15 @@ export default function BlackNavbar() {
                 </div>
                     <span className='black-nav-links'>
                         <a href='tel:+353 (83) 141 7085'> +353 (83) 141 7085 </a>
-                        <a onClick={scrollToBottom} className={classes.contact} title='Click to go to contact'>Contact</a>
+                        <Link onClick={scrollToBottom} className={classes.contact} title='Click to go to contact'>Contact</Link>
                     </span>
                     <span className='language-nav' >
-                        <a>
+                        <Link>
                             <ArrowLeftIcon className={classes.navIcon} onMouseOver={showLanguage} onMouseOut={hideLanguage}/>
-                        </a>
-                        <a  className={classes.language} onMouseOver={showLanguage} onMouseOut={hideLanguage}> 
+                        </Link>
+                        <Link  className={classes.language} onMouseOver={showLanguage} onMouseOut={hideLanguage}> 
                             En                           
-                        </a>
+                        </Link>
                     </span>
                     <span className='hover-clock-icon'>
                         <AccessTimeIcon className={classes.clockIcon} onClick={toggleClock}/>
@@ -77,10 +77,9 @@ export default function BlackNavbar() {
                     <span>
                         {clockOpen? <Clock /> : '' }
                     </span>
-
             </div>
 
-            {isOpen? <LanguageMenuDropdown /> : '' }               
+            {isOpen? <LanguageMenuDropdown onMouseOver={showLanguage} onMouseOut={hideLanguage}/> : '' }               
         </nav>
     )
 }

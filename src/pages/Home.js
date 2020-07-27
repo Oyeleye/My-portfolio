@@ -9,8 +9,9 @@ import ScrollToTop from '../components/ScrollToTop';
 import ScrollToBottom from '../components/ScrollToBottom';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import SmallHomeNavbar from '../components/SmallHomeNavbar';
+import NavBar from '../components/Navbar';
 import BlackNavbar from '../components/BlackNavbar';
+
 
 function Home () {
    useEffect(()=>{
@@ -21,7 +22,7 @@ function Home () {
 
    return (
       <> 
-
+         <NavBar />
          <BlackNavbar />
          <Hero > 
             <Banner   title='OYELEYE OYEDAYO' subtitle='Full-Stack Developer'>
@@ -29,7 +30,7 @@ function Home () {
                   See Projects
                </Link>
             </Banner>
-         <ScrollToBottom />
+            <ScrollToBottom />
          </Hero>
          <ScrollToTop />
          <Portfolio/>

@@ -1,19 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.svg';
 import githublogo from '../images/githublogo.png';
 import linkedin from '../images/linkedin.png';
-import Aos from 'aos';
 import {FaAlignRight} from 'react-icons/fa';
 import CloseIcon from '@material-ui/icons/Close';
 import SmallNavbar from '../components/SmallNavbar';
 
 export default function Navbar() {
 
-        const scrollToBottom = () => window.scrollTo({
-          top: document.documentElement.scrollHeight,
-          behavior:'smooth'
-        });
 
         const[isOpen, setIsOpen]= React.useState(false);
 
@@ -50,9 +45,6 @@ export default function Navbar() {
                     </li>
                     <li>
                       <Link to='./resume' title='Download resume'>Resume</Link>
-                    </li>
-                    <li>
-                      <Link to='./' title='Change language'>Language</Link>
                     </li>
                     <li>
                       <a href='https://github.com/Oyeleye' >

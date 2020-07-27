@@ -4,6 +4,7 @@ import Loading from './Loading';
 import Project from './Project';
 import Title from './Title';
 
+
 export default class FeaturedProjects extends Component {
    static contextType = ProjectContext;
        render() {

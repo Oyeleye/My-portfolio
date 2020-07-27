@@ -7,7 +7,6 @@ import Motivation from './pages/Motivation';
 import { Projects } from './pages/Projects';
 import {Resume} from './pages/Resume';
 import SingleProject from './pages/SingleProject';
-
 import { Route, Switch } from 'react-router-dom';
 
 import Navbar from './components/Navbar';

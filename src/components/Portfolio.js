@@ -12,7 +12,7 @@ export default function Portfolio () {
     return (
         <section className='portfolio'>
             <Title title='portfolio' />
-                <div className='portfolio-center' data-aos='fade-up'>
+                <div className='portfolio-center' >
                         <article className='portfolio'>
                             <span><FaLaptop/></span>
                             <h6>FRONTEND</h6>
@@ -21,23 +21,31 @@ export default function Portfolio () {
                             <p>JavaScript</p>
                             <p>React | Redux</p>
                         </article>
-                        <article className='portfolio'>
-                            <span><FaServer/></span>
-                            <h6>SERVER</h6>
-                            <p></p>
-                            <p></p>
-                        </article>
-                        <article className='portfolio'>
+                        <article className='portfolio' >
                             <span><FaDatabase/></span>
                             <h6>DATABASE</h6>
                             <p>PostgreSQL</p>
                             <p>MySQL</p>
+                            <p>MySQL</p>
+                            <p>Data Modeling</p>
+                            <p>Cloud Databases</p>
+                            <p>Database Optimization</p>
+                            <p>Database Management Systems</p>
                         </article>
                         <article className='portfolio'>
                             <span><FaCloud/></span>
                             <h6>DEPLOYMENT</h6>
                             <p>Firebase</p>
                             <p>Netlify</p>
+                        </article>
+                        <article className='portfolio' >
+                            <span><FaServer/></span>
+                            <h6>OTHER SKILLS</h6>
+                            <p>Version Control (Github)</p>
+                            <p>Debugging Techniques</p>
+                            <p>Front End Frameworks: Bootsrap/Materialize/Foundation</p>
+                            <p>Object Oriented Programming</p>
+                            <p>Test driven development</p>
                         </article> 
                 </div>
             </section>

@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import defaultImg from '../images/defaultBcg.jpeg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 
 export default function Project( { project } ) {
-    const { name, slug, images, price, codeUrl, projectUrl } = project;
+    const { name, images, codeUrl, projectUrl } = project;
         useEffect(()=>{
             Aos.init({duration:2000});
         },[]);
@@ -20,7 +19,7 @@ export default function Project( { project } ) {
                     See code
                 </a>
                 <a href={`${projectUrl}`} className='btn-primary project-link2'>
-                    See project
+                    Project
                 </a>
             </div>
             <p className='project-info'>

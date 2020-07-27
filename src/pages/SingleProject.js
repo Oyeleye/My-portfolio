@@ -30,7 +30,7 @@ export default class SingleProjects extends Component {
                    </div>
             );
         }
-        const {name, description, capacity, size, price, extras, breakfast, pets, images} = project
+        const {name} = project
         return (
             <Hero hero='projectsHero'>  
             <Banner title={`${name} project`}>

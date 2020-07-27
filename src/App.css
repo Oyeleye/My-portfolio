@@ -605,14 +605,14 @@ h6 {
 /* end of Title */
 
 /* portfolio */
-.portfolio {
+.portfolios {
   padding: 5rem 0;
 }
-.portfolio {
+.portfolios {
   background: var(--darkGrey);
   text-align: center;
 }
-.portfolio-center {
+.portfolios-center {
   width: 90vw;
   margin: 0 auto;
   display: grid;
@@ -626,22 +626,22 @@ h6 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
-.portfolio h6 {
+.portfolios h6 {
   letter-spacing: var(--mainSpacing);
 }
-.portfolio p {
+.portfolios p {
   width: 80%;
   margin: 0 auto;
 }
 @media screen and (min-width: 992px) {
-  .portfolio-center {
+  .portfolios-center {
     width: 95vw;
     max-width: 1170px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio p {
+  .portfolios p {
     width: 100%;
   }
 }

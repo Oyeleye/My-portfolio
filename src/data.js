@@ -884,7 +884,7 @@ export default [
     },
     fields: {
       codeUrl: "https://github.com/Oyeleye/Web-calculator",
-      projectUrl:"",
+      projectUrl:"https://web-calculator-c5155.firebaseapp.com/",
       name: "Web calculator",
       slug: "single-deluxe",
       type: "single",

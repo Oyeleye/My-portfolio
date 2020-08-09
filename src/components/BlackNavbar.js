@@ -20,7 +20,6 @@ export default function BlackNavbar() {
             cursor: 'pointer',
         },
         navIcon: {
-            marginLeft: '16rem',
             color:'#fff',
             cursor: 'pointer',
             marginBottom: '-0.2rem',
@@ -64,12 +63,13 @@ export default function BlackNavbar() {
                         <Link onClick={scrollToBottom} className={classes.contact} title='Click to go to contact'>Contact</Link>
                     </span>
                     <span className='language-nav' >
-                        <Link>
-                            <ArrowLeftIcon className={classes.navIcon} onMouseOver={showLanguage} onMouseOut={hideLanguage}/>
-                        </Link>
                         <Link  className={classes.language} onMouseOver={showLanguage} onMouseOut={hideLanguage}> 
                             En                           
                         </Link>
+                        <Link>
+                            <ArrowLeftIcon className={classes.navIcon} onMouseOver={showLanguage} onMouseOut={hideLanguage}/>
+                        </Link>
+
                     </span>
                     <span className='hover-clock-icon'>
                         <AccessTimeIcon className={classes.clockIcon} onClick={toggleClock}/>

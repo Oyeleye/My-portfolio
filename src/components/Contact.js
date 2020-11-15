@@ -10,7 +10,6 @@ import TextareaAutoSize from '@material-ui/core/TextareaAutoSize';
 
 
 
-
 export default function Contact() {
     const useStyles = makeStyles(theme => ({
         sentMsgStyle: {
@@ -87,7 +86,9 @@ export default function Contact() {
                             <br />
                             <TextareaAutoSize rowsMax={4}
                                 aria-label='maximum height'
-                                placeholder='Enter message' required></TextareaAutoSize>
+                                placeholder='Enter message' required>
+                            
+                            </TextareaAutoSize>
                             <br />
                             <Button type='submit' onClick={handleSubmitMessage} color='primary' variant='contained'>Submit</Button>
                         </form>
@@ -110,6 +111,6 @@ export default function Contact() {
                          <img src={linkedin} alt='My Portfolio'/>
                     </a>
                 </div>
-        </section>
+        </section>           
     )
 }

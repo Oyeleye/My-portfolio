@@ -5,7 +5,6 @@ import NavbarOtherPages from '../components/NavbarOtherPages';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-
 function Motivation() {
     useEffect(()=>{
         Aos.init({duration:2000});

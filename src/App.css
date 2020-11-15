@@ -710,7 +710,6 @@ h6 {
 }
 .project-link {
   position: absolute;
-  display: grid;
   top: 116%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -719,8 +718,6 @@ h6 {
 }
 .project-link2 {
   position: absolute;
-  overflow: hidden;
-  display: grid;
   top: 145%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);

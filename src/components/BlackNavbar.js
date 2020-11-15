@@ -62,21 +62,6 @@ export default function BlackNavbar() {
                         <a href='tel:+353 (83) 141 7085'> +353 (83) 141 7085 </a>
                         <Link onClick={scrollToBottom} className={classes.contact} title='Click to go to contact'>Contact</Link>
                     </span>
-                    <span className='language-nav' >
-                        <Link  className={classes.language} onMouseOver={showLanguage} onMouseOut={hideLanguage}> 
-                            En                           
-                        </Link>
-                        <Link>
-                            <ArrowLeftIcon className={classes.navIcon} onMouseOver={showLanguage} onMouseOut={hideLanguage}/>
-                        </Link>
-
-                    </span>
-                    <span className='hover-clock-icon'>
-                        <AccessTimeIcon className={classes.clockIcon} onClick={toggleClock}/>
-                    </span>
-                    <span>
-                        {clockOpen? <Clock /> : '' }
-                    </span>
             </div>
 
             {isOpen? <LanguageMenuDropdown onMouseOver={showLanguage} onMouseOut={hideLanguage}/> : '' }               

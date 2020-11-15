@@ -14,11 +14,11 @@ export default function Project( { project } ) {
         
         <article className='project'>
             <div data-aos='fade-up' className='img-container'>
-               <img src={images[0] || defaultImg} alt='single project'/>
-                <a href={`${codeUrl}`} className='btn-primary project-link'>
-                    See code
+                <img src={images[0] || defaultImg} alt='single project'/>
+                <a href={`${codeUrl}`} className='btn-primary  project-link'>
+                    code
                 </a>
-                <a href={`${projectUrl}`} className='btn-primary project-link2'>
+                <a href={`${projectUrl}`} className='btn-primary  project-link2'>
                     Project
                 </a>
             </div>

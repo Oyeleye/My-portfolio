@@ -36,7 +36,6 @@ function Home () {
          <Portfolio/>
          <MyFeaturedProject />
          <Contact />
-   
       </>
    );;
    

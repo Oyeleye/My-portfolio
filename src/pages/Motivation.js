@@ -35,8 +35,8 @@ function Motivation() {
                     I have contributed to open source projects, worked on engineering teams, and always stay 
                     attuned to the newest framework. 
                     I was an Intern University Teacher of Computer Learning at the University of Turku, Finland, 
-                    (2018 - 2019). During that time, I taught graduate students HTML5, CSS3 and JavaScript, and how it can be incorporated into 
-                    the teaching-learning process. 
+                    (2018 - 2019). During that time, I taught graduate students HTML5, CSS3 and JavaScript, and how they can be incorporated into 
+                    teaching-learning process. 
                 </p>
             </div>
         </div>

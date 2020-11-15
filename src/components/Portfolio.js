@@ -26,7 +26,6 @@ export default function Portfolio () {
                             <h6>DATABASE</h6>
                             <p>PostgreSQL</p>
                             <p>MySQL</p>
-                            <p>MySQL</p>
                             <p>Data Modeling</p>
                             <p>Cloud Databases</p>
                             <p>Database Optimization</p>

@@ -96,7 +96,7 @@ export default function Contact() {
                 </div>
                 <div className='copyright'>
                     <div className=''>
-                        Copyright © 2020 Oyeleye. All right reserved
+                        Copyright © 2021 Oyeleye. All right reserved
                     </div>
                       
                     <div className=''>

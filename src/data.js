@@ -14,7 +14,7 @@ import img9 from "./images/room-9.jpeg";
 import img10 from "./images/room-10.jpeg";
 import img11 from "./images/room-11.jpeg";
 import img12 from "./images/room-12.jpeg";
-import myportfolio from "./images/myportfolio.jpeg";
+import consultleyeImg from "./images/consultleyeImg.jpeg";
 
 export default [
   {
@@ -594,9 +594,9 @@ export default [
       id: "12"
     },
     fields: {
-      codeUrl: "https://github.com/Oyeleye/My-portfolio",
-      projectUrl: "https://oyeleyeoyedayo.com",
-      name: "My Portfolio Web",
+      codeUrl: "https://github.com/Oyeleye/consult-leye",
+      projectUrl: "https://consultleye.com",
+      name: "Business Web",
       slug: "double-deluxe",
       type: "double",
       price: 400,
@@ -620,7 +620,7 @@ export default [
         {
           fields: {
             file: {
-              url: myportfolio
+              url: consultleyeImg
             }
           }
         },

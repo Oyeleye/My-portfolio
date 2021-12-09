@@ -5,7 +5,7 @@ import project4 from "./images/details-4.jpeg";
 import img1 from "./images/room-1.jpeg";
 import img2 from "./images/room-2.jpeg";
 import img3 from "./images/room-3.jpeg";
-import webcalculator from "./images/webcalculator.jpeg";
+import chatappImg from "./images/chatappImg.jpeg";
 import img5 from "./images/room-5.jpeg";
 import img6 from "./images/room-6.jpeg";
 import img7 from "./images/room-7.jpeg";
@@ -883,9 +883,9 @@ export default [
       id: "4"
     },
     fields: {
-      codeUrl: "https://github.com/Oyeleye/Web-calculator",
-      projectUrl:"https://web-calculator-c5155.firebaseapp.com/",
-      name: "Web calculator",
+      codeUrl: "https://github.com/Oyeleye/chat-app",
+      projectUrl:"https://chat-app-ea6c6.firebaseapp.com/",
+      name: "Chat app",
       slug: "single-deluxe",
       type: "single",
       price: 300,
@@ -909,7 +909,7 @@ export default [
         {
           fields: {
             file: {
-              url: webcalculator
+              url: chatappImg
             }
           }
         },

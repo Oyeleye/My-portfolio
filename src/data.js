@@ -1,4 +1,4 @@
-import project1 from "./images/details-1.jpeg";
+import chatbotImg from "./images/chatbotImg.jpeg";
 import project2 from "./images/details-2.jpeg";
 import project3 from "./images/details-3.jpeg";
 import project4 from "./images/details-4.jpeg";
@@ -942,9 +942,9 @@ export default [
       id: "13"
     },
     fields: {
-      codeUrl:"https://github.com/Oyeleye/guessingGameProject",
-      projectUrl:"https://guessing-game-24e47.web.app",
-      name: "Guessing game",
+      codeUrl:"https://github.com/Oyeleye/Chatbot",
+      projectUrl:"https://chat-bot-8a023.firebaseapp.com/",
+      name: "Chat bot",
       slug: "presidential-room",
       type: "presidential",
       price: 600,
@@ -968,7 +968,7 @@ export default [
         {
           fields: {
             file: {
-              url: project1
+              url: chatbotImg
             }
           }
         },

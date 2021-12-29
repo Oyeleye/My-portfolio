@@ -61,10 +61,10 @@ export default function Contact() {
                     });
                     alert("Message sent");
                 } else {
-                    alert("Plz, fill in the fields");
+                    alert("Please, fill in the fields");
                 }
         } else {
-            alert("Plz, fill in the fields");
+            alert("Please, fill in the fields");
         }
     };
 
